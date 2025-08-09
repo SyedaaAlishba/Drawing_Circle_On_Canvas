@@ -14,12 +14,8 @@ public class Canvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if (circle != null) {
-            int x = (int) (circle.getCenter().getX() - circle.getRadius());
-            int y = (int) (circle.getCenter().getY() - circle.getRadius());
-            int diameter = circle.getRadius() * 2;
-
-            g.drawOval(x, y, diameter, diameter);
-        }
+        g.setColor(Color.BLUE);
+       g.drawOval(150,150,200,200);// only outline of a circle
+       g.fillOval(10,10,100,100); //we can create an circle with this only but this creates a filled circle
     }
 }

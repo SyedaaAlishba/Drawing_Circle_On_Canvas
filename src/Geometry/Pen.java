@@ -13,8 +13,7 @@ public class Pen {
     }
 
     public void drawCircle(int radius) {
-        // Create a circle with current position as center
-        Circle circle = new Circle(new Point(position.getX(), position.getY()), radius);
+        Circle circle = new Circle(new Point(100,100),50);
         canvas.addCircle(circle);
     }
     public void moveTo(Point p){

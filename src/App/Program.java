@@ -12,7 +12,7 @@ public class Program {
         Pen virtualPen = new Pen(canvas);
         Point p1 = new Point(100, 100);
         virtualPen.moveTo(p1);
-        virtualPen.drawCircle(50);
+
 
 
         JFrame frame= new JFrame("Circle");
